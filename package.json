@@ -1,0 +1,48 @@
+{
+  "devDependencies": {
+    "@types/azure-sb": "^0.0.38",
+    "@types/node": "^14.14.21",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "name": "azure-notificationhubs-node-sample",
+  "version": "1.0.0",
+  "description": "Azure Notification Hubs Sample using Azure-SB",
+  "main": "index.js",
+  "dependencies": {
+    "azure-sb": "^0.11.1"
+  },
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpodwysocki/azure-notificationhubs-node-sample.git"
+  },
+  "keywords": [
+    "azure",
+    "notification-hubs",
+    "apns",
+    "fcm",
+    "firebase",
+    "apple",
+    "wns",
+    "windows",
+    "push-notifications"
+  ],
+  "author": "Matthew Podwysocki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpodwysocki/azure-notificationhubs-node-sample/issues"
+  },
+  "homepage": "https://github.com/mpodwysocki/azure-notificationhubs-node-sample#readme"
+}
